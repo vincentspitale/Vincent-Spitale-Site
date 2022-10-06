@@ -1,3 +1,270 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  --bg: rgb(255, 255, 255);
+  --textNormal: rgb(29, 29, 31);
+  --textLight: rgb(148, 148, 148);
+  --textLink: #4e7464;
+  --textHover: #000000;
+  --backgroundLinkHover: rgb(229, 247, 237);
+  --contrastMaterial: white;
+  --selectedMaterial: white;
+  --transparentMaterial: rgba(245, 245, 245, 0.8);
+  --cardBackground: rgb(229, 247, 237);
+  --textGradient: linear-gradient(180deg, #125937 0%, #1e8465 100%);
+  --textTransparent: rgba(0, 0, 0, 0.8);
+  --shadow: rgba(0, 0, 0, 0.25);
+  --border: #e4e4e7;
+  --multi-background: #f2fffe;
+  --proud: linear-gradient(
+    90deg,
+    #c44c52 0%,
+    #b98532 20.31%,
+    #ccad31 39.06%,
+    #3da755 57.81%,
+    #498ff7 78.65%,
+    #716fd5 100%
+  );
+  --iconWidth: 0;
+  --arrow: url("data:image/svg+xml,%3Csvg width='10' height='9' color='%234E7464' viewBox='0 0 10 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.00195 6.32617V0.824219C9.00195 0.490234 8.79102 0.267578 8.45117 0.267578L2.94922 0.279297C2.62109 0.279297 2.41016 0.519531 2.41016 0.794922C2.41016 1.07031 2.65039 1.30469 2.92578 1.30469H4.66602L7.45508 1.19922L6.39453 2.13672L1.16211 7.38086C1.05664 7.48633 0.998047 7.61523 0.998047 7.73828C0.998047 8.01367 1.24414 8.27734 1.53125 8.27734C1.66602 8.27734 1.78906 8.22461 1.89453 8.11914L7.13281 2.875L8.07617 1.81445L7.96484 4.48047V6.34961C7.96484 6.61914 8.19922 6.86523 8.48633 6.86523C8.76172 6.86523 9.00195 6.63672 9.00195 6.32617Z' fill='currentColor'%3E%3C/path%3E%3C/svg%3E");
+  --boldArrow: url("data:image/svg+xml,%3Csvg width='10' height='9' color='%23000000' viewBox='0 0 10 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.00195 6.32617V0.824219C9.00195 0.490234 8.79102 0.267578 8.45117 0.267578L2.94922 0.279297C2.62109 0.279297 2.41016 0.519531 2.41016 0.794922C2.41016 1.07031 2.65039 1.30469 2.92578 1.30469H4.66602L7.45508 1.19922L6.39453 2.13672L1.16211 7.38086C1.05664 7.48633 0.998047 7.61523 0.998047 7.73828C0.998047 8.01367 1.24414 8.27734 1.53125 8.27734C1.66602 8.27734 1.78906 8.22461 1.89453 8.11914L7.13281 2.875L8.07617 1.81445L7.96484 4.48047V6.34961C7.96484 6.61914 8.19922 6.86523 8.48633 6.86523C8.76172 6.86523 9.00195 6.63672 9.00195 6.32617Z' fill='currentColor'%3E%3C/path%3E%3C/svg%3E");
+
+  font-family: 'Inter', -apple-system;
+  margin: 0;
+  font-size: 1rem;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  line-height: 1.75;
+
+  background-color: var(--bg);
+  color: var(--textNormal);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --bg: rgb(5, 5, 5);
+    --textNormal: rgb(207, 207, 207);
+    --textLight: rgb(153, 153, 153);
+    --textLink: #9ad4b8;
+    --textHover: #ffffff;
+    --backgroundLinkHover: rgb(94, 131, 112);
+    --contrastMaterial: rgb(35, 35, 35);
+    --selectedMaterial: rgb(55, 55, 61);
+    --transparentMaterial: rgba(32, 32, 32, 0.8);
+    --cardBackground: rgb(35, 65, 49);
+    --textGradient: linear-gradient(180deg, #d0ffe9 0%, #d5ffeb 100%);
+    --textTransparent: rgba(255, 255, 255, 0.8);
+    --border: #2c2c2c;
+    --multi-background: rgba(11, 37, 36, 0.6);
+    --proud: linear-gradient(
+      90deg,
+      #d25359 0%,
+      #d0922b 20.31%,
+      #f9d651 39.06%,
+      #6bdc85 57.81%,
+      #498ff7 78.65%,
+      #716fd5 100%
+    );
+    --arrow: url("data:image/svg+xml,%3Csvg width='10' height='9' color='%239ad4b8' viewBox='0 0 10 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.00195 6.32617V0.824219C9.00195 0.490234 8.79102 0.267578 8.45117 0.267578L2.94922 0.279297C2.62109 0.279297 2.41016 0.519531 2.41016 0.794922C2.41016 1.07031 2.65039 1.30469 2.92578 1.30469H4.66602L7.45508 1.19922L6.39453 2.13672L1.16211 7.38086C1.05664 7.48633 0.998047 7.61523 0.998047 7.73828C0.998047 8.01367 1.24414 8.27734 1.53125 8.27734C1.66602 8.27734 1.78906 8.22461 1.89453 8.11914L7.13281 2.875L8.07617 1.81445L7.96484 4.48047V6.34961C7.96484 6.61914 8.19922 6.86523 8.48633 6.86523C8.76172 6.86523 9.00195 6.63672 9.00195 6.32617Z' fill='currentColor'%3E%3C/path%3E%3C/svg%3E");
+    --boldArrow: url("data:image/svg+xml,%3Csvg width='10' height='9' color='%23ffffff' viewBox='0 0 10 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.00195 6.32617V0.824219C9.00195 0.490234 8.79102 0.267578 8.45117 0.267578L2.94922 0.279297C2.62109 0.279297 2.41016 0.519531 2.41016 0.794922C2.41016 1.07031 2.65039 1.30469 2.92578 1.30469H4.66602L7.45508 1.19922L6.39453 2.13672L1.16211 7.38086C1.05664 7.48633 0.998047 7.61523 0.998047 7.73828C0.998047 8.01367 1.24414 8.27734 1.53125 8.27734C1.66602 8.27734 1.78906 8.22461 1.89453 8.11914L7.13281 2.875L8.07617 1.81445L7.96484 4.48047V6.34961C7.96484 6.61914 8.19922 6.86523 8.48633 6.86523C8.76172 6.86523 9.00195 6.63672 9.00195 6.32617Z' fill='currentColor'%3E%3C/path%3E%3C/svg%3E");
+  }
+}
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+::selection {
+  background: var(--backgroundLinkHover);
+  color: var(--textHover);
+}
+
+.prose a {
+  color: var(--textLink);
+  text-decoration: none;
+}
+
+.prose a[href*="//"]:not([href*="vincentspitale.com"]):after
+{
+  content: '';
+  --iconWidth: 0.8em;
+  margin-left: 0.2em;
+  background-image: var(--arrow);
+  padding-left: var(--iconWidth);
+  background-size: var(--iconWidth) var(--iconWidth);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.prose a:hover {
+  text-decoration-line: underline;
+}
+
+.prose img {
+  width: 100%;
+  max-height: 90vh;
+  border-radius: 5px;
+  object-fit: contain;
+}
+
+.color-arrow a {
+  content: '';
+  --iconWidth: 0.8em;
+  margin-right: 0.2em;
+  background-image: var(--arrow);
+  padding-right: 20px;
+  background-size: var(--iconWidth) var(--iconWidth);
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+.bold-arrow a {
+  content: '';
+  --iconWidth: 0.8em;
+  margin-right: 0.2em;
+  background-image: var(--boldArrow);
+  padding-right: 20px;
+  background-size: var(--iconWidth) var(--iconWidth);
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+h4 {
+  font-size: 1.12rem;
+}
+
+.accent-color {
+  color: var(--textLink);
+}
+
+.bold-color {
+  color: var(--textHover);
+}
+
+.light-color {
+  color: var(--textLight);
+}
+
+.caption {
+  max-width: 676px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px;
+  margin: auto;
+}
+
+.centered-content {
+  display: flex;
+  flex: 1 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: auto;
+}
+
+.centering {
+  flex-grow: 1;
+}
+
+  
+.Proud {
+  background: var(--proud);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Proud:hover {
+  background: var(--textHover);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+a.Proud::after{
+content: none !important;
+}
+
+
+
+.spotify-record {
+  box-shadow: 0 0 transparent, 0 0 transparent, 0 1px 2px 0 rgba(0,0,0,0.05);
+}
+
+.disc-move-rotate {
+  animation: 2s cubic-bezier(0.2, 0.8, 0.2, 1) 2s disc-position, disc-rotation 20s infinite linear, disc-opacity 1s linear;
+  animation-fill-mode: forwards;
+}
+
+.disc-move {
+  animation: 2s cubic-bezier(0.2, 0.8, 0.2, 1) 2s disc-position, disc-opacity 1s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes disc-rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes disc-position {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 100px;
+  }
+}
+
+@keyframes disc-opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
