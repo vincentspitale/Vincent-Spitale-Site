@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/future/image'
 import Spotify from '../components/spotify/spotify'
+import SocialList from '../components/socials-list/socials-list'
 
 import dolores from "../images/dolores-portrait.jpg"
 
@@ -67,7 +68,7 @@ const Home: NextPage = () => (
       </div>
       <div className="pb-20">
         <h4>Profiles</h4>
-        {/* <SocialList /> */}
+        <SocialList />
       </div>
     </div>
     <div className="pb-20">
