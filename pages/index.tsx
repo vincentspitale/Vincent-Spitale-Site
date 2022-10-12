@@ -28,33 +28,19 @@ const Home: NextPage = () => (
           </a>
         </p>
         <p>
-          I'm a developer, student, photographer, and artist. I'm currently
-          studying computer science and mathematics at{' '}
+          I'm an app developer with a love for graphics programming. As of late, I've been splitting my time between studying computer science and mathematics at{' '}
           <a
             href="https://www.northeastern.edu/experience/"
             target="_blank"
             rel="noopener noreferrer"
           >
             Northeastern University
-          </a>
-          . I enjoy threading the needle between design, math, and tech to bring
+          </a>{' '}
+          and building products in the Bay Area. My best work threads the needle between design, math, and tech to bring
           experiences to life.
         </p>
-        <p>
-          I serve as a student advisor for{' '}
-          <a
-            href="https://www.numulti.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            MULTI
-          </a>
-          , Northeastern's undergraduate students for diversity, equity, and
-          inclusion in tech. There I help maintain a community for marginalized
-          students interested in a tech career.
-        </p>
         <p className="pb-10">
-          This summer I'm working at{' '}
+          I'm currently at{' '}
           <a
             href="https://notability.com"
             target="_blank"
@@ -62,8 +48,7 @@ const Home: NextPage = () => (
           >
             Notability
           </a>{' '}
-          as a returning software engineer co-op. I'm eager to
-          advance note-taking on Apple platforms!
+          as a returning software engineer co-op. I'm incredibly proud of the work I've done there to enable features that further elevate digital note-taking.
         </p>
       </div>
       <div className="pb-20">

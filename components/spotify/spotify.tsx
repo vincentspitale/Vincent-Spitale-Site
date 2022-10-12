@@ -38,8 +38,8 @@ function Spotify() {
                 <div className="block h-60 w-60 relative top-0 left-0 mx-auto">
                     {isPlaying &&
                     <div className="">
-                <Image src={disk} className="max-h-full h-60 w-60 object-contain absolute z-0 top-0 disc-move-rotate" placeholder="blur"/>
-                <Image src={gloss} className="max-h-full h-60 w-60 object-contain absolute z-10 top-0 mix-blend-soft-light disc-move"  placeholder="blur"/>
+                <img src={disk.src} className="max-h-full h-60 w-60 object-contain absolute z-0 top-0 disc-move-rotate" placeholder="blur"/>
+                <img src={gloss.src} className="max-h-full h-60 w-60 object-contain absolute z-10 top-0 mix-blend-soft-light disc-move"  placeholder="blur"/>
                 </div>
                     }
                 <img className="max-h-full h-60 w-60 object-contain spotify-record absolute z-20 top-0 left-0" src={image}/>
