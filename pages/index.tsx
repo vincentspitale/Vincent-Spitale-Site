@@ -4,17 +4,21 @@ import Image from 'next/future/image'
 import Spotify from '../components/spotify/spotify'
 import SocialList from '../components/socials-list/socials-list'
 
-import dolores from "../images/dolores-portrait.jpg"
+import whiteboard from "../images/whiteboard-portrait.png"
 
 const Home: NextPage = () => (
   <div id="home-page">
     <div className="caption">
+
+    <div className="pt-10 pb-10">
+        <SocialList/>
+      </div>
       <div className="prose">
         <Image
-          src={dolores}
-          alt="Me smiling wearing a shirt with hummingbirds and a floral print in Dolores Park with the skyline in the background."
-          placeholder="blur"
+          src={whiteboard}
+          alt="Me wearing a deep blue curduroy shirt holding up an iPad in front of a whiteboard."
           priority
+          quality={100}
         />
         <p className="pt-10">
           Hi, I'm Vincent &ensp;{' '}
@@ -28,7 +32,7 @@ const Home: NextPage = () => (
           </a>
         </p>
         <p>
-          I'm an app developer with a love for graphics programming. As of late, I've been splitting my time between studying computer science and mathematics at{' '}
+          I'm an app developer with a love for graphics programming. Recently I've been splitting my time between studying computer science and mathematics at{' '}
           <a
             href="https://www.northeastern.edu/experience/"
             target="_blank"
@@ -51,12 +55,8 @@ const Home: NextPage = () => (
           as a returning software engineer co-op. I'm incredibly proud of the work I've done there to enable features that further elevate digital note-taking.
         </p>
       </div>
-      <div className="pb-20">
-        <h4>Profiles</h4>
-        <SocialList />
-      </div>
     </div>
-    <div className="pb-20">
+    <div className="pt-20 pb-20">
       <Spotify />
     </div>
   </div>
