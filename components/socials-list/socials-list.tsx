@@ -1,7 +1,7 @@
 import React, {Component} from "react"
 
 const SocialList = ({ }) => ( 
-        <div className="flex-wrap space-x-3 space-y-3 color-arrow">
+        <div className="grid grid-flow-col-dense grid-rows-2 sm:grid-rows-none gap-x-3 color-arrow">
          <a className="group" href="https://www.twitter.com/vincentspitale" target="_blank" rel="noopener noreferrer"> 
         <span className="flex-none accent-color group-hover:underline">Twitter</span>
         </a>
@@ -9,13 +9,13 @@ const SocialList = ({ }) => (
         <span className="flex-none accent-color group-hover:underline">Instagram</span> 
         </a>
         
-      <a className="group" href="https://www.github.com/vincentspitale" target="_blank" rel="noopener noreferrer">
+      {/* <a className="group" href="https://www.github.com/vincentspitale" target="_blank" rel="noopener noreferrer">
         <span className="flex-none accent-color group-hover:underline">Github</span>
         </a>
 
         <a className="group" href="https://www.linkedin.com/in/vincentspitale" target="_blank" rel="noopener noreferrer">
         <span className="flex-none accent-color group-hover:underline">Linkedin</span>
-        </a>
+        </a> */}
         </div>
 ) 
 

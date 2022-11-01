@@ -9,8 +9,8 @@ import whiteboard from "../images/whiteboard-portrait.png"
 const Home: NextPage = () => (
   <div id="home-page">
     <div className="caption">
-
-    <div className="pt-10 pb-10">
+    <div className="flex justify-between space-x-3 pt-0 pb-5 sm:pt-10 sm:pb-10">
+    <h5 className="bold-color m-0 whitespace-nowrap">Vincent Spitale</h5>
         <SocialList/>
       </div>
       <div className="prose">
