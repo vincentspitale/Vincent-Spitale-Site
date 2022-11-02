@@ -1,4 +1,4 @@
-import Image from 'next/future/image'
+import Image from 'next/image'
 import React, {Component, useEffect, useState} from "react"
 import disk from "../../images/disc.png"
 import gloss from "../../images/gloss.png"

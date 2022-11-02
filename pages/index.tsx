@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/future/image'
+import Image from 'next/image'
 import Spotify from '../components/spotify/spotify'
 import SocialList from '../components/socials-list/socials-list'
 
