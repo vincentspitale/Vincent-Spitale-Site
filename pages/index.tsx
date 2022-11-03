@@ -14,12 +14,30 @@ const Home: NextPage = () => (
         <SocialList/>
       </div>
       <div className="prose">
+      <div className="space-y-3">
         <Image
           src={whiteboard}
           alt="Me wearing a deep blue curduroy shirt holding up an iPad in front of a whiteboard."
           priority
           quality={100}
         />
+<video className="image-to-ink" autoPlay={true} loop={true} muted={true} playsInline={true} width="100%" height="auto">
+<source 
+    src="/videos/imagetoink.mov"
+    type='video/mp4;'/>
+  <source 
+    src="/videos/imagetoink-vp9-chrome.webm"
+    type="video/webm"></source>
+<source src={"https://merittthomas.com/video/hello.mp4"} type="video/mp4"/>
+</video>
+        <Image
+          src={whiteboard}
+          className="semantic-colors"
+          alt="Me wearing a deep blue curduroy shirt holding up an iPad in front of a whiteboard."
+          priority
+          quality={100}
+        />
+        </div>
         <p className="pt-10">
           Hi, I'm Vincent &ensp;{' '}
           <a

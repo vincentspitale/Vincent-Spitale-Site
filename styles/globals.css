@@ -232,7 +232,17 @@ a.Proud::after{
 content: none !important;
 }
 
+@media (prefers-color-scheme: dark) {
+.semantic-colors {
+  -webkit-filter: invert(100%) hue-rotate(180deg);
+}
+}
 
+@media (prefers-color-scheme: dark) {
+.image-to-ink {
+  -webkit-filter: saturate(130%) invert(100%) hue-rotate(180deg) brightness(130%);
+}
+}
 
 .spotify-record {
   box-shadow: 0 0 transparent, 0 0 transparent, 0 1px 2px 0 rgba(0,0,0,0.05);
