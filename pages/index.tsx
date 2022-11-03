@@ -23,7 +23,7 @@ const Home: NextPage = () => (
         />
 <video className="image-to-ink" autoPlay={true} loop={true} muted={true} playsInline={true} width="100%" height="auto">
 <source 
-    src="/videos/imagetoink.mov"
+    src="/videos/imagetoink.mp4"
     type='video/mp4;'/>
   <source 
     src="/videos/imagetoink-vp9-chrome.webm"
