@@ -28,7 +28,6 @@ const Home: NextPage = () => (
   <source 
     src="/videos/imagetoink-vp9-chrome.webm"
     type="video/webm"></source>
-<source src={"https://merittthomas.com/video/hello.mp4"} type="video/mp4"/>
 </video>
         <Image
           src={whiteboard}
