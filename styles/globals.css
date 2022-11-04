@@ -52,7 +52,7 @@ body {
 
 @media (prefers-color-scheme: dark) {
   body {
-    --bg: rgb(5, 5, 5);
+    --bg: rgb(0, 0, 0);
     --textNormal: rgb(207, 207, 207);
     --textLight: rgb(153, 153, 153);
     --textLink: #b4afe3;
