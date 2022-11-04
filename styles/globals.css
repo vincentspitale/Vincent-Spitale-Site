@@ -240,7 +240,7 @@ content: none !important;
 
 @media (prefers-color-scheme: dark) {
 .image-to-ink {
-  -webkit-filter: saturate(130%) invert(100%) hue-rotate(180deg) brightness(130%);
+  -webkit-filter: saturate(130%) invert(100%) hue-rotate(180deg) brightness(150%);
 }
 }
 
