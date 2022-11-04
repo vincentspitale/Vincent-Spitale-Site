@@ -63,6 +63,31 @@ const Home: NextPage = () => (
             </div>
           </div>
         </div>
+        <div className="bg-card-gray dark:bg-card-gray-d rounded-lg">
+          <div className="p-10">
+            <div className="relative max-h-[30rem] aspect-[229/296] mx-auto">
+              <video
+                className="px-[5.0%] pt-[4.8%]"
+                autoPlay={true}
+                loop={true}
+                muted={true}
+                playsInline={true}
+                width="100%"
+                height="auto"
+              >
+                <source src="/videos/notes.mp4" type="video/mp4;" />
+              </video>
+
+              <Image
+                className="absolute top-0"
+                src={ipad}
+                alt="iPad bezel"
+                priority
+                quality={100}
+              />
+            </div>
+          </div>
+        </div>
       </div>
       <div className="prose">
         <p className="pt-10">
@@ -104,8 +129,10 @@ const Home: NextPage = () => (
           note-taking.
         </p>
       </div>
+      <div className="pt-5 pb-20">
+        <Spotify />
+      </div>
     </div>
-    <div className="pt-20 pb-20"></div>
   </div>
 )
 
