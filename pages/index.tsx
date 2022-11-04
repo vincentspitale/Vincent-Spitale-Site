@@ -5,6 +5,7 @@ import Spotify from '../components/spotify/spotify'
 import SocialList from '../components/socials-list/socials-list'
 
 import whiteboard from '../images/whiteboard-portrait.png'
+import ipad from '../images/iPad Pro 12.9 - Space Gray - Portrait.png'
 
 const Home: NextPage = () => (
   <div id="home-page">
@@ -13,37 +14,57 @@ const Home: NextPage = () => (
         <h5 className="bold-color m-0 whitespace-nowrap">Vincent Spitale</h5>
         <SocialList />
       </div>
-      <div className="prose">
-        <div className="space-y-3">
-          <Image
-            src={whiteboard}
-            alt="Me wearing a deep blue curduroy shirt holding up an iPad in front of a whiteboard."
-            priority
-            quality={100}
-          />
-          <video
-            className="w-full aspect-[12/5] image-to-ink"
-            autoPlay={true}
-            loop={true}
-            muted={true}
-            playsInline={true}
-            width="100%"
-            height="auto"
-          >
-            <source src="/videos/imagetoink.mp4" type="video/mp4;" />
-            <source
-              src="/videos/imagetoink-vp9-chrome.webm"
-              type="video/webm"
-            ></source>
-          </video>
-          <Image
-            src={whiteboard}
-            className="semantic-colors"
-            alt="Me wearing a deep blue curduroy shirt holding up an iPad in front of a whiteboard."
-            priority
-            quality={100}
-          />
+
+      <div className="space-y-3">
+        <Image
+          className="rounded-lg"
+          src={whiteboard}
+          alt="Me wearing a deep blue curduroy shirt holding up an iPad in front of a whiteboard."
+          priority
+          quality={100}
+        />
+        <video
+          className="w-full aspect-[12/5] image-to-ink"
+          autoPlay={true}
+          loop={true}
+          muted={true}
+          playsInline={true}
+          width="100%"
+          height="auto"
+        >
+          <source src="/videos/imagetoink.mp4" type="video/mp4;" />
+          <source
+            src="/videos/imagetoink-vp9-chrome.webm"
+            type="video/webm"
+          ></source>
+        </video>
+        <div className="bg-card-gray dark:bg-card-gray-d rounded-lg">
+          <div className="p-10">
+            <div className="relative">
+              <video
+                className="max-h-[30rem] aspect-[3/4]"
+                autoPlay={true}
+                loop={true}
+                muted={true}
+                playsInline={true}
+                width="100%"
+                height="auto"
+              >
+                <source src="/videos/textbook.mp4" type="video/mp4;" />
+              </video>
+
+              {/* <Image
+                className="absolute w-fit h-full top-0"
+                src={ipad}
+                alt="iPad bezel"
+                priority
+                quality={100}
+              /> */}
+            </div>
+          </div>
         </div>
+      </div>
+      <div className="prose">
         <p className="pt-10">
           Hi, I'm Vincent &ensp;{' '}
           <a

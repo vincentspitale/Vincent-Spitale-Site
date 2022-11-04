@@ -8,7 +8,12 @@ module.exports = {
     fontFamily: {
       main: '"Inter"'
     },
-    extend: {},
+    extend: {
+      colors: {
+        'card-gray': '#e9e9e9',
+        'card-gray-d': '#222222',
+      },
+    },
   },
   plugins: [],
 }
