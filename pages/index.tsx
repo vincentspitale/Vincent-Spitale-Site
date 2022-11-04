@@ -40,9 +40,9 @@ const Home: NextPage = () => (
         </video>
         <div className="bg-card-gray dark:bg-card-gray-d rounded-lg">
           <div className="p-10">
-            <div className="relative">
+            <div className="relative max-h-[30rem] aspect-[229/296] mx-auto">
               <video
-                className="max-h-[30rem] aspect-[3/4]"
+                className="px-[5.1%] pt-[4.8%]"
                 autoPlay={true}
                 loop={true}
                 muted={true}
@@ -53,13 +53,13 @@ const Home: NextPage = () => (
                 <source src="/videos/textbook.mp4" type="video/mp4;" />
               </video>
 
-              {/* <Image
-                className="absolute w-fit h-full top-0"
+              <Image
+                className="absolute top-0"
                 src={ipad}
                 alt="iPad bezel"
                 priority
                 quality={100}
-              /> */}
+              />
             </div>
           </div>
         </div>
@@ -105,9 +105,7 @@ const Home: NextPage = () => (
         </p>
       </div>
     </div>
-    <div className="pt-20 pb-20">
-      <Spotify />
-    </div>
+    <div className="pt-20 pb-20"></div>
   </div>
 )
 
