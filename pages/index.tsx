@@ -38,6 +38,17 @@ const Home: NextPage = () => (
             type="video/webm"
           ></source>
         </video>
+        <video
+          className="w-full aspect-[2158/1608] rounded-lg"
+          autoPlay={true}
+          loop={true}
+          muted={true}
+          playsInline={true}
+          width="100%"
+          height="auto"
+        >
+          <source src="/videos/demo.mp4" type="video/mp4;" />
+        </video>
         <div className="bg-card-gray dark:bg-card-gray-d rounded-lg">
           <div className="p-10">
             <div className="relative max-h-[30rem] aspect-[229/296] mx-auto">
