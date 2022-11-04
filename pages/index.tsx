@@ -42,7 +42,7 @@ const Home: NextPage = () => (
           <div className="p-10">
             <div className="relative max-h-[30rem] aspect-[229/296] mx-auto">
               <video
-                className="px-[5.1%] pt-[4.8%]"
+                className="px-[5.0%] pt-[4.8%]"
                 autoPlay={true}
                 loop={true}
                 muted={true}
