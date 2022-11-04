@@ -22,7 +22,7 @@ const Home: NextPage = () => (
             quality={100}
           />
           <video
-            className="image-to-ink"
+            className="w-full aspect-[12/5] image-to-ink"
             autoPlay={true}
             loop={true}
             muted={true}
