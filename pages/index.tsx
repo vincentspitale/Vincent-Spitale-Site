@@ -5,6 +5,7 @@ import Spotify from '../components/spotify/spotify'
 import SocialList from '../components/socials-list/socials-list'
 
 import whiteboard from '../images/whiteboard-portrait.png'
+import ferryBuilding from '../images/ferry-building.jpg'
 import ipad from '../images/iPad Pro 12.9 - Space Gray - Portrait.png'
 
 const Home: NextPage = () => (
@@ -102,6 +103,15 @@ const Home: NextPage = () => (
               />
             </div>
           </div>
+        </div>
+        <div className="pr-3">
+          <Image
+            className="max-w-[50%] rounded-lg"
+            src={ferryBuilding}
+            alt="Me smiling wearing a deep blue curduroy shirt and yellow oversized round sunglasses in front of the Bay Bridge."
+            priority
+            quality={80}
+          />
         </div>
       </div>
       <div className="prose">
