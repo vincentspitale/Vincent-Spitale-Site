@@ -4,7 +4,6 @@ import disk from '../../images/disc.png'
 import gloss from '../../images/gloss.png'
 
 function Spotify() {
-  const [isLoading, setIsLoading] = useState(true)
   const [songName, setSongName] = useState(null)
   const [artistName, setArtistName] = useState(null)
   const [image, setImage] = useState(null)
@@ -20,7 +19,6 @@ function Spotify() {
       })
       .then((data) => {
         if (data.response && data.response.length > 0) {
-          setIsLoading(false)
           setSongName(data.songName)
           setArtistName(data.artistName)
           setImage(data.image)

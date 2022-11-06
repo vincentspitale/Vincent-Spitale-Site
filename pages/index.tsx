@@ -24,6 +24,7 @@ const Home: NextPage = () => (
           quality={100}
         />
         <video
+          title="Image to Ink"
           className="w-full aspect-[12/5] image-to-ink"
           autoPlay={true}
           loop={true}
@@ -39,6 +40,7 @@ const Home: NextPage = () => (
           ></source>
         </video>
         <video
+          title="A whiteboard being converted to digital ink and the writing being selected and moved"
           className="w-full aspect-[2158/1608] rounded-lg"
           autoPlay={true}
           loop={true}
@@ -53,6 +55,7 @@ const Home: NextPage = () => (
           <div className="p-10">
             <div className="relative max-h-[30rem] aspect-[229/296] mx-auto">
               <video
+                title="Textbook switching from a light to a dark appearance"
                 className="px-[5.0%] pt-[4.8%]"
                 autoPlay={true}
                 loop={true}
@@ -65,11 +68,11 @@ const Home: NextPage = () => (
               </video>
 
               <Image
-                className="absolute top-0"
+                className="absolute top-0 select-none"
                 src={ipad}
                 alt="iPad bezel"
                 priority
-                quality={100}
+                quality={80}
               />
             </div>
           </div>
@@ -78,6 +81,7 @@ const Home: NextPage = () => (
           <div className="p-10">
             <div className="relative max-h-[30rem] aspect-[229/296] mx-auto">
               <video
+                title="Biology notes switching from a light to a dark appearance"
                 className="px-[5.0%] pt-[4.8%]"
                 autoPlay={true}
                 loop={true}
@@ -90,11 +94,11 @@ const Home: NextPage = () => (
               </video>
 
               <Image
-                className="absolute top-0"
+                className="absolute top-0 select-none"
                 src={ipad}
                 alt="iPad bezel"
                 priority
-                quality={100}
+                quality={80}
               />
             </div>
           </div>
