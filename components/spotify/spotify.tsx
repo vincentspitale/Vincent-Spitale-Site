@@ -38,7 +38,7 @@ function Spotify() {
       <div className="w-full">
         <a
           className="flex flex-row justify-content-center"
-          href={link}
+          href={`https://song.link/${link}`}
           target="_blank"
           rel="noopener noreferrer"
         >
