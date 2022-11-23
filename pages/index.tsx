@@ -13,7 +13,7 @@ const Home: NextPage = () => (
     <div className="caption">
       <div className="flex justify-between space-x-3 pt-0 pb-5 sm:pt-10 sm:pb-10">
         <h5 className="bold-color m-0 whitespace-nowrap">Vincent Spitale</h5>
-        <SocialList />
+        {/* About Section Link */}
       </div>
 
       <div className="space-y-3">
@@ -104,14 +104,19 @@ const Home: NextPage = () => (
             </div>
           </div>
         </div>
-        <div className="pr-3">
-          <Image
-            className="max-w-[50%] rounded-lg"
-            src={ferryBuilding}
-            alt="Me smiling wearing a deep blue curduroy shirt and yellow oversized round sunglasses in front of the Bay Bridge."
-            priority
-            quality={80}
-          />
+        <div className="flex flex-row">
+          <div className="max-w-[50%] pr-1.5">
+            <Image
+              className="rounded-lg"
+              src={ferryBuilding}
+              alt="Me smiling wearing a deep blue curduroy shirt and yellow oversized round sunglasses in front of the Bay Bridge."
+              priority
+              quality={80}
+            />
+          </div>
+          <div className="pl-1.5">
+            <SocialList />
+          </div>
         </div>
       </div>
       <div className="prose">
