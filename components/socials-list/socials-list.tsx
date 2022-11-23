@@ -6,7 +6,7 @@ const SocialList = ({}) => (
       className="group"
       href="https://mastodon.social/@vincentspitale"
       target="_blank"
-      rel="noopener noreferrer"
+      rel="me"
     >
       <span className="flex-none accent-color group-hover:underline">
         Mastodon
