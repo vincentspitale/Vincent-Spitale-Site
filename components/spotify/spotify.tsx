@@ -53,7 +53,10 @@ function Spotify() {
           </div>
           <div className="w-full pl-6 mt-auto mb-auto">
             <p className="italic text-sm light-color">
-              {`${response} `} <span className="text-color"><Balancer>{songName}</Balancer></span>
+              {`${response} `}{' '}
+              <span className="text-color">
+                <Balancer>{songName}</Balancer>
+              </span>
               <br />
               {`by ${artistName}`}
             </p>
