@@ -1,8 +1,6 @@
 import Image from 'next/image'
 import React, { Component, useEffect, useState } from 'react'
 import Balancer from 'react-wrap-balancer'
-import disk from '../../images/disc.png'
-import gloss from '../../images/gloss.png'
 
 function Spotify() {
   const [songName, setSongName] = useState(null)
@@ -43,7 +41,7 @@ function Spotify() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="w-auto">
+          <div className="w-auto mt-auto mb-auto">
             <div className="h-20 w-20">
               <img
                 className="h-20 w-20 object-contain spotify-record rounded-md"
@@ -68,7 +66,7 @@ function Spotify() {
     return (
       <div className="w-full">
         <div className="flex flex-row justify-content-center">
-          <div className="w-auto">
+          <div className="w-auto mt-auto mb-auto">
             <div className="h-20 w-20"></div>
           </div>
           <div className="w-full pl-6 mt-auto mb-auto">
