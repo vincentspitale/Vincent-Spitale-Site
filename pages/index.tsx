@@ -146,7 +146,7 @@ const Home: NextPage = () => (
           between design, math, and tech to bring experiences to life.
         </p>
         <p className="pb-10">
-          I'm currently at{' '}
+          I was last at{' '}
           <a
             href="https://notability.com"
             target="_blank"
@@ -154,8 +154,8 @@ const Home: NextPage = () => (
           >
             Notability
           </a>{' '}
-          as a returning software engineer co-op. I'm incredibly proud of the
-          work I've done there to enable features that further elevate digital
+          as a software engineer co-op. I'm incredibly proud of the work I've
+          done there to enable features that further elevate digital
           note-taking.
         </p>
       </div>
