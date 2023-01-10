@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 const SocialList = ({}) => (
-  <div className="grid grid-flow-col-dense grid-rows-6 gap-x-10 gap-y-2">
+  <div className="grid col-1 grid-rows-6 gap-x-10 gap-y-2 color-arrow">
     <a
       className="group"
       href="https://mastodon.social/@vincentspitale"
