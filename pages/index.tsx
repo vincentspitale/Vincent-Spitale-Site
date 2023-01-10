@@ -8,6 +8,7 @@ import whiteboard from '../images/whiteboard-portrait.png'
 import ferryBuilding from '../images/ferry-building.jpg'
 import photoDraw from '../images/photo-draw.png'
 import ipad from '../images/iPad Pro 12.9 - Space Gray - Portrait.png'
+import MultiFistHero from '../components/multi-fist/multi-fist'
 
 const Home: NextPage = () => (
   <div id="home-page">
@@ -77,7 +78,7 @@ const Home: NextPage = () => (
         </div>
       </div>
       <div className="md:max-h-screen md:overflow-y-auto no-scrollbar">
-        <div className="p-4 space-y-4 gap-4 columns-1 lg:columns-2 xl:columns-3">
+        <div className="p-4 space-y-4 gap-4 columns-1 lg:columns-2 2xl:columns-3">
           <div className="space-y-4 inline-block">
             <Image
               className="rounded-lg"
@@ -143,16 +144,35 @@ const Home: NextPage = () => (
               </div>
             </div>
           </div>
-          <div className="flex flex-row">
-            <div className="bg-card-gray dark:bg-card-gray-d rounded-lg">
-              <Image
-                className=""
-                src={photoDraw}
-                alt=""
-                priority
-                quality={80}
-              />
-            </div>
+          <div>
+            <a
+              href="https://www.wwdcscholars.com/s/AE68C5AB-FF6E-49F4-9D8B-BBFF397F64A1/2022"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="bg-card-gray dark:bg-card-gray-d rounded-lg">
+                <Image
+                  className=""
+                  src={photoDraw}
+                  alt="Swift Student Challenge 2022. Drawing Tool Picker."
+                  priority
+                  quality={80}
+                />
+              </div>
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://numulti.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="bg-card-gray dark:bg-card-gray-d rounded-lg">
+                <div className="p-[5%]">
+                  <MultiFistHero />
+                </div>
+              </div>
+            </a>
           </div>
           {/* */}
         </div>
