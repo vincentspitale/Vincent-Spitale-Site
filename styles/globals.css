@@ -327,6 +327,8 @@ content: none !important;
   }
 }
 
+/* MULTI */
+
 .multi-gender {
   fill: var(--hero-gender);
 }
@@ -341,7 +343,7 @@ content: none !important;
 
 .multi-fist-color {
   fill: #bd7a4e;
-  animation: multi-fist 5s infinite;
+  animation: multi-fist 10s infinite;
 }
 
 iframe {
@@ -365,20 +367,6 @@ iframe {
   100% {
     fill: #c48f6c;
   }
-}
-
-.link {
-  padding: 15px 30px;
-  margin: 10px;
-  display: inline-block;
-  color: #000;
-  background: #ffce54;
-  text-decoration: none;
-}
-
-.link:hover {
-  text-decoration: none;
-  color: #000;
 }
 
 /*===================*/

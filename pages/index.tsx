@@ -7,13 +7,14 @@ import SocialList from '../components/socials-list/socials-list'
 import whiteboard from '../images/whiteboard-portrait.png'
 import ferryBuilding from '../images/ferry-building.jpg'
 import photoDraw from '../images/photo-draw.png'
+import photoDrawDark from '../images/photo-draw-dark.png'
 import ipad from '../images/iPad Pro 12.9 - Space Gray - Portrait.png'
 import MultiFistHero from '../components/multi-fist/multi-fist'
 
 const Home: NextPage = () => (
   <div id="home-page">
     <div className="flex flex-col h-screen md:flex-row">
-      <div className="flex-none md:w-[20em] md:max-h-screen overflow-y-auto no-scrollbar">
+      <div className="flex-none md:w-[22em] md:pl-4 md:max-h-screen overflow-y-auto no-scrollbar">
         {/* <div className="flex justify-between space-x-3 pt-0 pb-5 sm:pt-10 sm:pb-10">
         <h5 className="bold-color m-0 whitespace-nowrap">Vincent Spitale</h5>
       </div> */}
@@ -29,7 +30,7 @@ const Home: NextPage = () => (
               />
             </div>
           </div>
-          <div className="prose">
+          <div className="prose md:text-base">
             <p className="pt-10">
               Hi, I'm Vincent &ensp;{' '}
               <a
@@ -78,7 +79,7 @@ const Home: NextPage = () => (
         </div>
       </div>
       <div className="md:max-h-screen md:overflow-y-auto no-scrollbar">
-        <div className="p-4 space-y-4 gap-4 columns-1 lg:columns-2 2xl:columns-3">
+        <div className="p-4 space-y-4 gap-4 columns-1 xl:columns-2 2xl:columns-3">
           <div className="space-y-4 inline-block">
             <Image
               className="rounded-lg"
@@ -151,13 +152,16 @@ const Home: NextPage = () => (
               rel="noopener noreferrer"
             >
               <div className="bg-card-gray dark:bg-card-gray-d rounded-lg">
-                <Image
-                  className=""
-                  src={photoDraw}
-                  alt="Swift Student Challenge 2022. Drawing Tool Picker."
-                  priority
-                  quality={80}
-                />
+                <picture>
+                  <source
+                    srcSet={photoDrawDark.src}
+                    media="(prefers-color-scheme: dark)"
+                  />
+                  <img
+                    src={photoDraw.src}
+                    alt="Swift Student Challenge 2022. Drawing Tool Picker."
+                  />
+                </picture>
               </div>
             </a>
           </div>
